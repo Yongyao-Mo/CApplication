@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/accessibility_service_description" // 对这个AccessibilityService进行描述，用在设置->辅助功能界面
+    android:packageNames="com.example.android.apis" //需要监听的应用包名，如果不设置，则监听所有程序
+    android:accessibilityEventTypes="typeAllMask" //需要监听的事件类型，有窗口变化、点击、焦点变化等很多事件类型。如果想要监听所有的事件类型，则使用typeAllMask。如果需要多个事件类型可以使用“|”进行分隔。下面有支持的事件类型
+    android:accessibilityFlags="flagDefault" //附加标志
+    android:accessibilityFeedbackType="feedbackSpoken" //service的反馈类型
+    android:notificationTimeout="100" //连续两个相同类型的事件之间的最小间隔
+    android:canRetrieveWindowContent="true" //是否接受活动窗口的内容
+    android:settingsActivity="com.example.android.accessibility.ServiceSettingsActivity" //允许修改这个service设置的activity
+/>

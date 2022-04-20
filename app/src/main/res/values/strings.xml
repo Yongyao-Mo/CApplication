@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CApplication</string>
+    <string name="accessibility_service_description">Open service, capture text on screens</string>
+    <string name="android_monitor">Android Monitor</string>
+</resources>
